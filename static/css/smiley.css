@@ -1,0 +1,17 @@
+/* Style for the clapping smiley */
+.clap-smiley {
+    z-index:2;
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('../img/smiley.png') no-repeat center center/contain; /* Replace 'clap-smiley.png' with the actual image URL */
+    animation: raining 5s linear infinite; /* Adjust the animation duration and timing as needed */
+}
+
+/* Keyframes for the raining animation */
+@keyframes raining {
+    0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
